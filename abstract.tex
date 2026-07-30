@@ -1,0 +1,14 @@
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This project presents the complete RTL-to-GDSII implementation of a Universal Asynchronous Receiver-Transmitter (UART) Intellectual Property (IP) core using the open-source OpenLane2 ASIC design flow and the SkyWater SKY130 Process Design Kit (PDK). The objective of the project is to demonstrate the complete digital ASIC design methodology, beginning from Register Transfer Level (RTL) design and ending with a manufacturable GDSII layout.
+
+The UART IP core was developed in Verilog HDL using a modular architecture consisting of a Baud Rate Generator, UART Transmitter, UART Receiver, and a top-level integration module. Functional verification of each module was performed using dedicated Verilog testbenches, and the simulation waveforms confirmed the correct operation of the complete UART communication system.
+
+The verified RTL was synthesized using Yosys and implemented through the OpenLane2 automated RTL-to-GDSII flow. The physical design process included floorplanning, standard-cell placement, clock tree synthesis (CTS), global routing, and detailed routing using OpenROAD. Post-layout verification was carried out using OpenRCX for parasitic extraction, OpenSTA for timing analysis, Magic for Design Rule Checking (DRC), and Netgen for Layout Versus Schematic (LVS) verification. Power integrity was evaluated through IR-drop analysis, while the final manufacturability assessment confirmed successful completion of antenna, DRC, and LVS verification.
+
+The implementation achieved successful timing closure, efficient placement and routing, zero routing overflow, negligible IR drop, zero DRC violations, successful LVS matching, and complete manufacturability verification. The final output of the project is a verified GDSII layout of the UART IP core, demonstrating the effectiveness of the OpenLane2 open-source ASIC design flow. This project provides practical experience with modern digital ASIC implementation and highlights the complete transformation of a synthesizable RTL design into a fabrication-ready integrated circuit.
+
+\vspace{1em}
+
+\noindent\textbf{Keywords:} UART, ASIC, RTL-to-GDSII, Verilog HDL, OpenLane2, OpenROAD, SKY130 PDK, Physical Design, Static Timing Analysis, Magic DRC, Netgen LVS, GDSII.
